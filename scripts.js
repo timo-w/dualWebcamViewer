@@ -28,22 +28,24 @@ document.getElementById('openWebcams').addEventListener('click', async function(
 
         // Assign video streams to video elements in the popups
         if (videoDevices.length === 1) {
+            console.log("only one cam found.");
             // Only one camera connected
             const stream = await navigator.mediaDevices.getUserMedia({ 
                 video: { deviceId: videoDevices[0].deviceId },
-                audio: false 
+                audio: false
             });
             video1.srcObject = stream;
             video2.srcObject = stream;
         } else {
+            console.log("both cams found.");
             // Two cameras connected
             const stream1 = await navigator.mediaDevices.getUserMedia({ 
                 video: { deviceId: videoDevices[0].deviceId },
-                audio: false 
+                audio: false
             });
             const stream2 = await navigator.mediaDevices.getUserMedia({ 
                 video: { deviceId: videoDevices[1].deviceId },
-                audio: false 
+                audio: false
             });
 
             video1.srcObject = stream1;
