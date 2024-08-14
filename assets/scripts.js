@@ -52,6 +52,16 @@ document.getElementById('openWebcams').addEventListener('click', async function(
             video2.srcObject = stream2;
         }
 
+        // Close popup windows on main window close
+        document.getElementById('closeWebcams').addEventListener('click', function() {
+            if (popup1 && !popup1.closed) {
+                popup1.close();
+            }
+            if (popup2 && !popup2.closed) {
+                popup2.close();
+            }
+        });
+
     } catch (error) {
         console.error('Error accessing media devices.', error);
         alert('Error accessing media devices: ' + error.message);
