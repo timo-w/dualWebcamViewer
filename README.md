@@ -12,3 +12,7 @@ Click the central button to open webcams. You may need to allow popups and allow
 ## Requirements
 - Python 3.12.x or newer
 - A (modern) browser
+
+## License
+
+Licensed under the MIT License. See more information in the LICENSE file.
