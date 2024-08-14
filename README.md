@@ -15,4 +15,6 @@ Click the central button to open webcams. You may need to allow popups and allow
 
 ## License
 
-Licensed under the MIT License. See more information in the LICENSE file.
+This project is open-source and licensed under the MIT License. See more information in the "LICENSE" file.
+
+Copyright (c) 2024 Timothy Wang
